@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>JavaScript Quiz</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header" class="header">
+        <div id="highScoresBtn" class="highScoresBtn">High Scores</div>
+        <div id="timer">Timer</div>
+      </div>
+      <div id="start" class="start">Start Quiz</div>
+
+      <div id="quiz" style="display: none">
+        <div id="question" class="question"></div>
+        <div id="choices">
+          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+          <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </div>
+      </div>
+      <div id="finalScore" style="display: none">
+        
+        <div class="score">Final Score</div>
+        <div class="score" id="yourScore"></div>
+        
+        <form class="score">
+          <input placeholder="Your Name" id="name" />
+          <button id="add-btn">Submit Score</button>
+        </form>
+      </div>
+      <div id="highScores" class="highScores" style="display: none">
+        <div class="highScoresTitle">High Scores</div>
+        <div id="nameAndScore" class="nameAndScore"></div>
+      </div>
+      <div id="homeBtn" class="homeBtn" style="display: none">Home</div>
+    </div>
+    <script src="questionlist.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
