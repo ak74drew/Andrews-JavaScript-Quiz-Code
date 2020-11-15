@@ -16,3 +16,5 @@ The second picture is afterwards with all the set high scores.
 
 Below is a link to the application. 
 https://ak74drew.github.io/Andrews-JavaScript-Quiz-Code/
+
+I did add another script file specifically for the questions and possible answers. That would be the questionlist.js
